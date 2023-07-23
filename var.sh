@@ -1,0 +1,1 @@
+export TOOLS_PATH=$(dirname "$(readlink -f "$0")")
