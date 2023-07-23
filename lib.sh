@@ -1,6 +1,9 @@
 function dotenv(){
     export $(cat $TOOLS_PATH/.env | xargs)
 }
+function low(){
+    echo "fuck"
+}
 function put(){
     local last_argument=${!#}
     echo "Transfering files to $last_argument"
@@ -8,3 +11,4 @@ function put(){
 }
 export -f put
 export -f dotenv
+export -f low
