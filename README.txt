@@ -1,4 +1,4 @@
-**Cruise**
+**deploychains**
 A tool to build and deploy files.
 
 **Usage**
