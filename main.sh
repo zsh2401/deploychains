@@ -1,6 +1,7 @@
 #!/bin/bash
-source var.sh
-source lib.sh
+export TOOLS_PATH=$(dirname "$(readlink -f "$0")")
+source $TOOLS_PATH/var.sh
+source $TOOLS_PATH/lib.sh
 dotenv
 
 if [ -f "$TOOLS_PATH/deploy_$1.sh" ]; then
